@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY-FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Nigerian Universities Survey</h1>
+    <p id="description"> Please answer the following questions to help us determine the best university in 2024</p>
+    <form  id="survey-form">
+        <label id="name-label">Name<input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+        <label id="email-label">Email<input type="email" name="email" id="email" placeholder="Enter your Email" required></label>
+        <label id="number-label">Age<small>(Optional)</small><input type="number" name="number" id="number" min="15" max="25" placeholder="Enter your Age"></label>
+        <label>University
+            <input type="text" id="university-label" placeholder="Enter the name of your university">
+        </label>
+
+        <label>Current Level of Study
+            <select  id="dropdown">
+                <option value="level">Select Current Level</option>
+                <option value="100">100 Level</option>
+                <option value="200">200 Level</option>
+                <option value="300">300 Level</option>
+                <option value="400">400 Level</option>
+                <option value="500">500 Level</option>
+                <option value="extra">Extra </option>
+            </select>
+        </label>
+
+        <p id="text">Would you recommend your university to your friend?
+            <label><input type="radio" name="university" value="definitely" checked>Definitely</label>
+            <label><input type="radio" name="university" value="maybe">Maybe</label>
+            <label><input type="radio" name="university" value="notsure">Not Sure</label> 
+        </p>
+
+        <p id="text"> What would you like to see improved in your university? <small>(Check all that apply)</small>
+            <label>
+                <input type="checkbox" value="facilities" > Facilities
+            </label>
+            <label>
+                <input type="checkbox" value="lecturers" > Lecturers
+            </label>
+            <label>
+                <input type="checkbox" value="library" > Library
+            </label>
+            <label>
+                <input type="checkbox" value="Social" > Social Activities
+            </label>
+            <label>
+                <input type="checkbox"  value="food" > Food
+            </label>
+            <label>
+                <input type="checkbox"  value="price" > Price
+            </label>
+        </p>
+
+        <label> Any comments, complaints or suggestions?
+            <textarea  cols="30" rows="10"></textarea>
+        </label>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
